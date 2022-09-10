@@ -1359,14 +1359,21 @@ padding-bottom: 2em;
 		{
 			top:30%;
 		}
+		.about-header{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 		.about-header h3 {
 			font-size: 1.4em;
 		}
 		.about-header p{
 			font-size: 0.5em;
+			
 		}
 		.about-imag img {
 			width: 90%;
+		
 		}
 		.about-text {
 			float: left;
