@@ -4,12 +4,13 @@ const origenal_Content = `<div class="col-md-4 services-grid">
 <h4>TITLE</h4>
 <p>PARAGRAPH</p>
 </div>`;
-fetch("http://localhost:4000/users")
+fetch("http://localhost:4000/services")
   .then((response) => response.json())
   .then((data) => {
     data.forEach(element => {
       var content = origenal_Content;
       content =content.replace('TITLE',element.title);
+      content =content.replace('PARAGRAPH',element.paragraph);
       var service = document.createElement("div");
       service.innerHTML = content;
       services.appendChild(service);
