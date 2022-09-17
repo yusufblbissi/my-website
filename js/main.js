@@ -1,10 +1,11 @@
 var services = document.getElementById("services-grids");
+const url="http://localhost:4000/services"
 const origenal_Content = `<div class="col-md-4 services-grid">
 <img src="images/img1.png" alt="" />
 <h4>TITLE</h4>
 <p>PARAGRAPH</p>
 </div>`;
-fetch("http://localhost:4000/services")
+fetch(url)
   .then((response) => response.json())
   .then((data) => {
     data.forEach(element => {
